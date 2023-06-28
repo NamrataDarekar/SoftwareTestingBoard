@@ -22,6 +22,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class SignInProgram{
 		public WebDriverWait wait;
+		public WebDriver driver;
 		/*
 		 * WebDriverManager.chromedriver().setup(); WebDriver driver = new
 		 * ChromeDriver();

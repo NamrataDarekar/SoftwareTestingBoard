@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class ShoppingScript extends SignInProgram  {
-   
+          public WebDriver driver;
         // Create a new instance of ChromeDriver
 //        WebDriver driver = new ChromeDriver();
 //

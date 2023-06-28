@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class ShoppingCartScript2 extends SignInProgram{
-	//static WebDriver driver;
+	static WebDriver driver;
     
     	
         // Create a new instance of ChromeDriver
