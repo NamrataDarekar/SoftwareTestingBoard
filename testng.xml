@@ -3,10 +3,10 @@
 <suite name="Suite">
   <test  name="Test">
     <classes>
-      <class name="com.luma.ShoppingScript"/>
-      <class name="com.luma.NewAccountCreat"/>
-      <class name="com.luma.SignInProgram"/>
-      <class name="com.luma.ShoppingCartScript2"/>
+       <class name="com.luma.NewAccountCreat"/>
+       <class name="com.luma.SignInProgram"/>
+       <class name="com.luma.ShoppingScript"/>
+       <class name="com.luma.ShoppingCartScript2"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

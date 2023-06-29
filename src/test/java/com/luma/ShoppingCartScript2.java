@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -20,7 +21,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class ShoppingCartScript2{
-	static WebDriver driver;
+	WebDriver driver;
 	@Test
     public void sp2() {
     	

@@ -15,6 +15,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -128,8 +129,7 @@ public void signin()
 		  // Print the error message 
 		  System.out.println("Error message: " + errorMessage.getText());
 		  
-		  // Close the browser 
-		  driver.quit();
-	}
+		  
+}
 
 }

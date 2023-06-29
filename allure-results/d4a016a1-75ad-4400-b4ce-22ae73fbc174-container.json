@@ -1,0 +1,1 @@
+{"uuid":"d4a016a1-75ad-4400-b4ce-22ae73fbc174","name":"com.luma.NewAccountCreat.setUp","children":["3a1ffeb6-0b5b-466b-8eff-87d7ff1dbcb9"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1687956331451,"stop":1687956427274}],"afters":[],"start":1687956331450,"stop":1687956427275}

@@ -24,19 +24,17 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class NewAccountCreat {
      public WebDriver driver;
-	@BeforeClass
-    public void setUp() {
-		
+     @Test
+ 	public void account() throws InterruptedException
+ 	{
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://magento.softwaretestingboard.com/");
 		driver.manage().window().maximize(); 
-	}
+	
 		//create an new account
-	@Test
-	public void account() throws InterruptedException
-	{
+	
 		driver.findElement(By.linkText("Create an Account")).click();
 				
 		//registration form details		
@@ -67,13 +65,13 @@ public class NewAccountCreat {
             e.printStackTrace();
         }
         System.out.println("ss captured");
-	}
-	
-	@AfterClass
-	public void tearDown()
-	{
+        
         driver.close();
 	}
+	
+	
+        
+	
 
 	}
 
