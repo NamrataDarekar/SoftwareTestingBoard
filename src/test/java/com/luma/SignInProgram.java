@@ -18,7 +18,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
+import Luma.TestComponent.BaseTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import nd.PageObject.LoginPage;
 
 public class SignInProgram {
 @Test
@@ -39,13 +41,14 @@ public void signin()
         // Find and click on the "Sign In" link
         WebElement signInLink = driver.findElement(By.linkText("Sign In"));
         signInLink.click();
-
+        
+        LoginPage loginpg=new LoginPage();
         // Fill in the login form
         WebElement emailField = driver.findElement(By.id("email"));
-        emailField.sendKeys("namrata@gmail.com");
+        emailField.sendKeys("rupali@gmail.com");
 
         WebElement passwordField = driver.findElement(By.id("pass"));
-        passwordField.sendKeys("namrata#123");
+        passwordField.sendKeys("rupali@123");
         
 //        WebElement capchaField =driver.findElement(By.xpath("//input[@name='captcha[user_login]']"));
 //        capchaField.sendKeys("JCnyr");
@@ -53,15 +56,17 @@ public void signin()
         // Submit the login form
         WebElement loginBtn = driver.findElement(By.id("send2"));
         loginBtn.click();
+	
+	
 
         // Explicitly wait for the user name element to appear
         WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
         WebElement userName = wait.until(ExpectedConditions.visibilityOfElementLocated(By
-        .xpath("//div[@class='panel header']//span[@class='logged-in'][normalize-space()='Welcome, Namrata Darekar!']")));
+        .xpath("//div[@class='panel header']//span[@class='logged-in'][normalize-space()='Welcome, rupali darekar!']")));
 
         // Validate successful signing
 		
-		  String expectedUserName = "Welcome, Namrata Darekar!"; 
+		  String expectedUserName = "Welcome, rupali darekar!"; 
 		  if(userName.getText().equals(expectedUserName)) 
 		  {
 		  System.out.println("Successfully signed in with the user: " + expectedUserName); 
@@ -105,9 +110,9 @@ public void signin()
 		      signInLink.click(); 
 		  }
 		  emailField = driver.findElement(By.id("email"));
-	      emailField.sendKeys("namrat@gmail.com");
+	      emailField.sendKeys("rup@gmail.com");
 	      passwordField = driver.findElement(By.id("pass"));
-	      passwordField.sendKeys("namrata123");
+	      passwordField.sendKeys("rupali123");
 		  
 	      loginBtn = driver.findElement(By.id("send2"));
 	      loginBtn.click();
@@ -128,6 +133,9 @@ public void signin()
 		  
 		  // Print the error message 
 		  System.out.println("Error message: " + errorMessage.getText());
+		  
+		  driver.close();
+		  
 		  
 		  
 }

@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-29T11:02:01 IST" name="Default suite" finished-at="2023-06-29T11:02:08 IST" duration-ms="7337">
+  <suite started-at="2023-07-14T11:58:15 IST" name="Suite" finished-at="2023-07-14T11:59:30 IST" duration-ms="75042">
     <groups>
     </groups>
-    <test started-at="2023-06-29T11:02:01 IST" name="Default test" finished-at="2023-06-29T11:02:08 IST" duration-ms="7337">
-      <class name="ExtentReport">
-        <test-method is-config="true" signature="config()[pri:0, instance:ExtentReport@c430e6c]" started-at="2023-06-29T11:02:01 IST" name="config" finished-at="2023-06-29T11:02:01 IST" duration-ms="238" status="PASS">
+    <test started-at="2023-07-14T11:58:15 IST" name="Test" finished-at="2023-07-14T11:59:30 IST" duration-ms="75042">
+      <class name="com.luma.SignInProgram">
+        <test-method signature="signin()[pri:0, instance:com.luma.SignInProgram@676cf48]" started-at="2023-07-14T11:58:32 IST" name="signin" finished-at="2023-07-14T11:58:47 IST" duration-ms="15023" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- config -->
-        <test-method signature="initialDemo()[pri:0, instance:ExtentReport@c430e6c]" started-at="2023-06-29T11:02:01 IST" name="initialDemo" finished-at="2023-06-29T11:02:08 IST" duration-ms="7002" status="PASS">
+        </test-method> <!-- signin -->
+      </class> <!-- com.luma.SignInProgram -->
+      <class name="com.luma.NewAccountCreat">
+        <test-method signature="account()[pri:0, instance:com.luma.NewAccountCreat@6b88ca8c]" started-at="2023-07-14T11:58:19 IST" name="account" finished-at="2023-07-14T11:58:32 IST" duration-ms="12736" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialDemo -->
-      </class> <!-- ExtentReport -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- account -->
+      </class> <!-- com.luma.NewAccountCreat -->
+      <class name="com.luma.ShoppingCart">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.luma.ShoppingCart@5e4bd84a]" started-at="2023-07-14T11:58:15 IST" name="setUp" finished-at="2023-07-14T11:58:19 IST" duration-ms="3991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ShoppingCart()[pri:0, instance:com.luma.ShoppingCart@5e4bd84a]" started-at="2023-07-14T11:58:47 IST" name="ShoppingCart" finished-at="2023-07-14T11:59:29 IST" duration-ms="42454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ShoppingCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.luma.ShoppingCart@5e4bd84a]" started-at="2023-07-14T11:59:29 IST" name="tearDown" finished-at="2023-07-14T11:59:30 IST" duration-ms="723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.luma.ShoppingCart -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

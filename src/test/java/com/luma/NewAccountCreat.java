@@ -38,11 +38,11 @@ public class NewAccountCreat {
 		driver.findElement(By.linkText("Create an Account")).click();
 				
 		//registration form details		
-		driver.findElement(By.id("firstname")).sendKeys("Namrata");//
+		driver.findElement(By.id("firstname")).sendKeys("Rupali");//
 		driver.findElement(By.id("lastname")).sendKeys("Darekar");
-		driver.findElement(By.id("email_address")).sendKeys("namrata@gmail.com");
-		driver.findElement(By.id("password")).sendKeys("namrata#123");
-		driver.findElement(By.id("password-confirmation")).sendKeys("namrata#123");
+		driver.findElement(By.id("email_address")).sendKeys("rupali@gmail.com");
+		driver.findElement(By.id("password")).sendKeys("rupali@123");
+		driver.findElement(By.id("password-confirmation")).sendKeys("rupali@123");
 		driver.findElement(By.cssSelector("button.submit")).click();
 		Thread.sleep(3000);
 		//successfully create new account message.
